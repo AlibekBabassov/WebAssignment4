@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-4">
+    <section id="task0">
+      <h2>Task0: Simple Contact Form: </h2>
+
+      <form action="#" method="post">
+        <label for="t0-name">Name:</label><br>
+        <input type="text" id="t0-name" name="name"><br><br>
+
+        <label for="t0-email">Email:</label><br>
+        <input type="email" id="t0-email" name="email"><br><br>
+
+        <label for="t0-message">Message:</label><br>
+        <textarea id="t0-message" name="message" rows="5" cols="30"></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="task1">
+      <h2>Task1: Form with HTML5 Validation</h2>
+
+      <form action="#" method="post">
+        <label for="t1-name">Name:</label><br>
+        <input type="text" id="t1-name" name="name" required minlength="2" maxlength="30"><br><br>
+
+        <label for="t1-email">Email:</label><br>
+        <input type="email" id="t1-email" name="email" required><br><br>
+
+        <label for="t1-message">Message:</label><br>
+        <textarea id="t1-message" name="message" rows="5" cols="30" required minlength="10" maxlength="200"></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="task2">
+      <h2>Task2: Bootstrap Form Styling</h2>
+
+      <form action="#" method="post">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="t2-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="t2-name" name="name" placeholder="Enter your name">
+            <div class="form-text">Write your first and last name.</div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="t2-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="t2-email" name="email" placeholder="name@example.com">
+            <div class="form-text">We will never share your email.</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="t2-message" class="form-label">Message</label>
+          <textarea class="form-control" id="t2-message" name="message" rows="4" placeholder="Write your message here"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </section>
+
+        <hr>
+
+    <section id="task3">
+      <h2>Task3: Bootstrap Validation Styles</h2>
+
+      <form id="t3-form" action="#" method="post" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="t3-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="t3-name" name="name" placeholder="Enter your name" required minlength="2">
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Name is required (at least 2 letters).</div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="t3-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="t3-email" name="email" placeholder="name@example.com" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Email is required. Enter a valid email like name@example.com.</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="t3-message" class="form-label">Message</label>
+          <textarea class="form-control" id="t3-message" name="message" rows="4" placeholder="Write your message here" required minlength="10"></textarea>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Message is required (at least 10 characters).</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="task4">
+      <h2>Task4: Registration Form</h2>
+
+      <form id="t4-form" action="#" method="post" novalidate>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="t4-first" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="t4-first" name="firstName" required minlength="2">
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">First name is required (at least 2 letters).</div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="t4-last" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="t4-last" name="lastName" required minlength="2">
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Last name is required (at least 2 letters).</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="t4-email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="t4-email" name="email" placeholder="name@example.com" required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Enter a valid email like name@example.com.</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="t4-password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="t4-password" name="password" required minlength="8">
+            <div class="form-text">At least 8 characters.</div>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Password must be at least 8 characters.</div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="t4-confirm" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="t4-confirm" name="confirmPassword" required>
+            <div class="valid-feedback">Passwords match!</div>
+            <div class="invalid-feedback">Please repeat the same password.</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label d-block">Gender</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="t4-male" value="male" required>
+            <label class="form-check-label" for="t4-male">Male</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="t4-female" value="female" required>
+            <label class="form-check-label" for="t4-female">Female</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="t4-other" value="other" required>
+            <label class="form-check-label" for="t4-other">Other</label>
+            <div class="invalid-feedback">Please choose your gender.</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label d-block">Hobbies</label>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="t4-reading" name="hobbies" value="reading">
+            <label class="form-check-label" for="t4-reading">Reading</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="t4-sports" name="hobbies" value="sports">
+            <label class="form-check-label" for="t4-sports">Sports</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="t4-music" name="hobbies" value="music">
+            <label class="form-check-label" for="t4-music">Music</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="t4-coding" name="hobbies" value="coding">
+            <label class="form-check-label" for="t4-coding">Coding</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="t4-country" class="form-label">Country</label>
+            <select class="form-select" id="t4-country" name="country" required>
+              <option value="">Choose...</option>
+              <option value="kz">Kazakhstan</option>
+              <option value="ru">Russia</option>
+              <option value="us">USA</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please select your country.</div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Task3
+    const form3 = document.getElementById("t3-form");
+
+    form3.addEventListener("submit", function (event) {
+      event.preventDefault(); 
+
+      const fields = form3.querySelectorAll("input, textarea");
+
+      fields.forEach(function (field) {
+        if (field.checkValidity()) {
+          field.classList.add("is-valid");
+          field.classList.remove("is-invalid");
+        } else {
+          field.classList.add("is-invalid");
+          field.classList.remove("is-valid");
+        }
+      });
+    });
+
+    // Task4
+    const form4 = document.getElementById("t4-form");
+    const pass = document.getElementById("t4-password");
+    const confirmPass = document.getElementById("t4-confirm");
+
+    form4.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (pass.value !== confirmPass.value) {
+        confirmPass.setCustomValidity("Passwords do not match");
+      } else {
+        confirmPass.setCustomValidity("");
+      }
+
+      const fields = form4.querySelectorAll("input:not([type=checkbox]), select");
+
+      fields.forEach(function (field) {
+        if (field.checkValidity()) {
+          field.classList.add("is-valid");
+          field.classList.remove("is-invalid");
+        } else {
+          field.classList.add("is-invalid");
+          field.classList.remove("is-valid");
+        }
+      });
+
+      if (form4.checkValidity()) {
+        alert("Registration successful!");
+      }
+    });
+
+    form4.addEventListener("reset", function () {
+      form4.querySelectorAll(".is-valid, .is-invalid").forEach(function (field) {
+        field.classList.remove("is-valid", "is-invalid");
+      });
+    });
+  </script>
+</body>
+</html>
